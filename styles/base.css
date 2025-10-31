@@ -1,0 +1,99 @@
+/* Reset and base layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and navigation */
+header {
+  background-color: #444;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+}
+
+.navigation li {
+  flex: 1;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem;
+  color: #eee;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #555;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.card {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Footer */
+footer {
+  background: #444;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}

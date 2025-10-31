@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Home Page of Nestor Gomez from Spain">
+    <meta name="author" content="Nestor Gomez Artiles">
+    <title>WDD 131 – Dynamic Web Fundamentals – Nestor Gomez</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to WDD131</h1>
-    
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nestor Gomez</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Nestor Gomez portrait" style="width:120px; border-radius:50%; display:block; margin:0 auto 1rem;">
+            <p>Hello! I’m Nestor from Spain. I enjoy learning about web development and exploring creative ways to build interactive, well-designed websites. This course helps me strengthen my skills with HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section class="card">
+            <h2>My Interests</h2>
+            <img src="images/spain.webp" alt="Spain landscape" width="250">
+            <p>I love traveling around Spain, exploring art and history, and trying out new coding projects. When I’m not studying, I like reading, playing guitar, and spending time outdoors.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Nestor Gomez | Spain</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
