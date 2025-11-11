@@ -51,11 +51,6 @@ main {
   gap: 0.5rem;
 }
 
-.icon::after {
-  content: "⛅";
-  font-size: 1.5rem;
-}
-
 footer {
   text-align: center;
   background-color: var(--primary-color);
@@ -64,18 +59,11 @@ footer {
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 640px) {
-  main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-  }
 
-  .hero {
-    grid-column: 1 / -1;
-  }
 
-  .weather .icon::after {
-    content: "☀️";
-  }
+.weather-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-left: 0.5rem;
 }
