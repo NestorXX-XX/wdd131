@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Spain – a vibrant country full of culture, sunshine, and history." />
+  <meta name="author" content="Nestor Gomez Artiles" />
+  <title>Discover Spain – Nestor Gomez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Spain</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/spain-small.webp" media="(max-width: 600px)">
+        <source srcset="images/spain-medium.webp" media="(max-width: 1000px)">
+        <img src="images/spain-large.webp" alt="Scenic view of Spain" width="900" height="500">
+      </picture>
+    </section>
+
+    <section class="info">
+      <h2>About Spain</h2>
+      <p>Spain is a vibrant country in southwestern Europe, known for its diverse landscapes, sunny beaches, and rich cultural traditions. From flamenco dancing to world-renowned cuisine, Spain offers something for everyone.</p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="icon"></span></h2>
+      <p>Temperature: <span id="temperature">18</span>°C</p>
+      <p>Wind Speed: <span id="windspeed">12</span> km/h</p>
+      <p>Wind Chill: <span id="windchill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Nestor Gomez | Spain</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
