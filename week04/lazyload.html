@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lazy loading temple images example – WDD 131 Activity by Nestor Gomez">
+  <meta name="author" content="Nestor Gomez Artiles">
+  <title>Lazy Loading Temples – Nestor Gomez</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Corrected relative paths -->
+  <link rel="stylesheet" href="styles/lazyload.css">
+  <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>Lazy Loading Temple Album</h1>
+
+    <figure>
+      <img src="../images/temple1.jpg" alt="Salt Lake Temple" width="400" height="600" loading="lazy">
+      <figcaption>Salt Lake Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../images/temple2.jpg" alt="Rome Italy Temple" width="400" height="600" loading="lazy">
+      <figcaption>Rome Italy Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../images/temple3.jpg" alt="Paris France Temple" width="400" height="600" loading="lazy">
+      <figcaption>Paris France Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../images/temple4.jpg" alt="Manila Philippines Temple" width="400" height="600" loading="lazy">
+      <figcaption>Manila Philippines Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../images/temple5.jpg" alt="Madrid Spain Temple" width="400" height="600" loading="lazy">
+      <figcaption>Madrid Spain Temple</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../images/temple6.jpg" alt="Mexico City Temple" width="400" height="600" loading="lazy">
+      <figcaption>Mexico City Temple</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Nestor Gomez | Spain</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
