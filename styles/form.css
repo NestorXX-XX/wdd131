@@ -88,3 +88,15 @@ footer {
 footer p {
   margin: 0.25rem;
 }
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  .rating {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

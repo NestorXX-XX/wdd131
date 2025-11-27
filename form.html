@@ -6,7 +6,6 @@
   <meta name="description" content="Product Review Form by Nestor Gomez – WDD131 Assignment">
   <meta name="author" content="Nestor Gomez Artiles">
   <title>Product Review – Nestor Gomez</title>
-
   <link rel="stylesheet" href="styles/form.css">
   <script src="scripts/form.js" defer></script>
 </head>
@@ -23,16 +22,25 @@
 
         <label for="productName">Product Name <span>*</span></label>
         <select id="productName" name="productName" required>
-          <option value="" disabled selected>Choose a Product ...</option>
+          <option value="" disabled selected>Select a Product ...</option>
         </select>
 
         <label>Overall Rating <span>*</span></label>
         <div class="rating">
-          <label><input type="radio" name="rating" value="1" required> ☆</label>
-          <label><input type="radio" name="rating" value="2"> ☆☆</label>
-          <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-          <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-          <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
+          <input type="radio" id="rate1" name="rating" value="1" required>
+          <label for="rate1">★</label>
+
+          <input type="radio" id="rate2" name="rating" value="2" required>
+          <label for="rate2">★★</label>
+
+          <input type="radio" id="rate3" name="rating" value="3" required>
+          <label for="rate3">★★★</label>
+
+          <input type="radio" id="rate4" name="rating" value="4" required>
+          <label for="rate4">★★★★</label>
+
+          <input type="radio" id="rate5" name="rating" value="5" required>
+          <label for="rate5">★★★★★</label>
         </div>
 
         <label for="installDate">Date of Installation <span>*</span></label>
@@ -42,18 +50,26 @@
       <fieldset>
         <legend>Product Features</legend>
         <p><em>Which features did you find useful? (Check all that apply)</em></p>
-        <label><input type="checkbox" id="durability" name="feature" value="Durability"> Durability</label>
-        <label><input type="checkbox" id="ease" name="feature" value="Ease of Use"> Ease of Use</label>
-        <label><input type="checkbox" id="performance" name="feature" value="Performance"> Performance</label>
-        <label><input type="checkbox" id="design" name="feature" value="Design"> Design</label>
+
+        <input type="checkbox" id="durability" name="feature" value="Durability">
+        <label for="durability">Durability</label>
+
+        <input type="checkbox" id="ease" name="feature" value="Ease of Use">
+        <label for="ease">Ease of Use</label>
+
+        <input type="checkbox" id="performance" name="feature" value="Performance">
+        <label for="performance">Performance</label>
+
+        <input type="checkbox" id="design" name="feature" value="Design">
+        <label for="design">Design</label>
       </fieldset>
 
       <fieldset>
         <legend>Additional Feedback</legend>
-        <label for="review">Written Review <span>(Optional)</span></label>
+        <label for="review">Written Review (Optional)</label>
         <textarea id="review" name="review" rows="4"></textarea>
 
-        <label for="userName">Your Name <span>(Optional)</span></label>
+        <label for="userName">Your Name (Optional)</label>
         <input type="text" id="userName" name="userName">
       </fieldset>
 
