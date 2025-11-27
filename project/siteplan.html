@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website planning document for the Spanish Landmarks Explorer project by Nestor Gomez" />
+  <meta name="author" content="Nestor Gomez Artiles" />
+  <title>Site Plan – Spanish Landmarks Explorer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Spanish Landmarks Explorer</h1>
+    <p>Website Planning Document</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>Spanish Landmarks Explorer</strong></p>
+      <p>This name fits the site’s purpose - exploring famous places in Spain. It’s simple, clear, and helps people know what the site is about.</p>
+      <p><em>Optional domain:</em> spanishlandmarks.org</p>
+    </section>
+
+    <section>
+      <h2>Site Purpose</h2>
+      <p>This site will help visitors learn about Spain’s most famous landmarks, like the Alhambra and Sagrada Familia. It will include photos, short descriptions, and facts about each landmark. Visitors can filter by region and save their favorites. A contact page will let users send questions or feedback.</p>
+    </section>
+
+    <section>
+      <h2>Scenarios</h2>
+      <ul>
+        <li>What are the most famous historical landmarks in southern Spain?</li>
+        <li>How can I save my favorite landmarks to view later?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Color Scheme</h2>
+      <p>The color palette will reflect Spain’s warm and rich atmosphere:</p>
+      <ul>
+        <li><strong>Primary Color:</strong> <span style="color:#c8102e;">#c8102e</span> – used for headings, buttons, and accents (represents Spain’s red flag color).</li>
+        <li><strong>Secondary Color:</strong> <span style="color:#ffc400;">#ffc400</span> – used for highlights and hover effects (represents the yellow of Spain’s flag).</li>
+        <li><strong>Background Color:</strong> <span>#f9f9f9</span> – light neutral background for readability.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Typography</h2>
+      <ul>
+        <li><strong>Font Family:</strong> Poppins (Sans-serif)</li>
+        <li><strong>Headings:</strong> Poppins, weight 600</li>
+        <li><strong>Body Text:</strong> Poppins, weight 400</li>
+      </ul>
+      <p>This font is modern, clean, and easy to read on any screen size.</p>
+    </section>
+
+    <section>
+      <h2>Wireframe</h2>
+      <p><strong>Mobile View:</strong></p>
+      <img src="images/wireframe-mobile.jpeg" alt="Mobile wireframe layout" width="300" height="400">
+
+      <p><strong>Desktop View:</strong></p>
+      <img src="images/wireframe-desktop.jpg" alt="Desktop wireframe layout" width="600" height="400">
+      <p>(Each wireframe shows header navigation, a landmark gallery, and footer.)</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Nestor Gomez | WDD 131 Project</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
