@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallery of Spanish landmarks – Filter and explore Spain’s most famous sites.">
+  <meta name="author" content="Nestor Gomez Artiles">
+  <title>Gallery – Spanish Landmarks Explorer</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <script src="scripts/gallery.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Spanish Landmarks Explorer</h1>
+    <button id="menu">☰</button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore by Region</h2>
+    <div class="filters">
+      <button data-region="all">All</button>
+      <button data-region="south">South</button>
+      <button data-region="north">North</button>
+      <button data-region="central">Central</button>
+    </div>
+
+    <section id="gallery" class="card-grid"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Nestor Gomez | Spain</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

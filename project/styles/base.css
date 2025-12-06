@@ -1,0 +1,113 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex; flex-direction: column;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+header {
+  background: #800020;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+#menu {
+  position: absolute; top: 1rem; right: 1rem;
+  background: none; border: none; color: white; font-size: 1.5rem;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  background: #400010;
+}
+.navigation a {
+  color: white;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+.navigation a:hover, .active { background: #b03050; }
+
+.show { display: flex; }
+
+main { flex: 1; padding: 2rem; text-align: center; }
+
+.hero {
+  background: url('../images/alhambra.jpg') center/cover no-repeat;
+  color: white;
+  padding: 5rem 2rem;
+  border-radius: 10px;
+}
+.hero .btn {
+  display: inline-block;
+  background: #800020;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.card img { width: 100%; height: auto; display: block; }
+.card h3 { margin: 0.5rem 0; color: #800020; }
+.card p { padding: 0 1rem 1rem; }
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background: #f2e6e6;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+label { display: block; margin-top: 1rem; text-align: left; }
+input, textarea {
+  width: 100%; padding: 0.5rem;
+  border: 1px solid #ccc; border-radius: 5px;
+}
+input[type="submit"] {
+  background: #800020; color: white; border: none;
+  padding: 0.75rem; margin-top: 1rem;
+  cursor: pointer;
+}
+input[type="submit"]:hover { background: #a8324a; }
+
+footer {
+  background: #800020;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.references-list {
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.references-list li {
+  margin-bottom: 1rem;
+}
+
+.references-list a {
+  color: #800020;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.references-list a:hover {
+  text-decoration: underline;
+}
